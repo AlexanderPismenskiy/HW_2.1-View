@@ -12,33 +12,45 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_2_1_View" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-AO-2u7">
-                                <rect key="frame" x="67" y="147" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q96-af-nzX">
+                                <rect key="frame" x="20" y="64" width="335" height="343"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-J2-1Op">
+                                <rect key="frame" x="20" y="415" width="335" height="343"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tud-AO-2u7" secondAttribute="bottom" constant="503" id="12K-3E-vkL"/>
-                            <constraint firstItem="Tud-AO-2u7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="510-uJ-ZGJ"/>
-                            <constraint firstItem="Tud-AO-2u7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="Rln-tE-M1K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tud-AO-2u7" secondAttribute="trailing" constant="68" id="tjR-IJ-JUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q96-af-nzX" secondAttribute="trailing" constant="20" id="0zR-Bu-PZe"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="top" secondItem="q96-af-nzX" secondAttribute="bottom" constant="8" symbolic="YES" id="CSX-eC-qTQ"/>
+                            <constraint firstItem="q96-af-nzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MDR-yq-eCi"/>
+                            <constraint firstItem="q96-af-nzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WSu-AT-UMw"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="height" secondItem="q96-af-nzX" secondAttribute="height" id="mtC-oU-WvY"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="width" secondItem="q96-af-nzX" secondAttribute="width" id="pxg-6j-IC8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RIc-J2-1Op" secondAttribute="bottom" constant="20" id="rgf-eO-5dr"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ujS-Oi-ydh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RIc-J2-1Op" secondAttribute="trailing" constant="20" id="zzS-ni-dPj"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="87.931034482758619"/>
+            <point key="canvasLocation" x="134.78260869565219" y="84.375"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
