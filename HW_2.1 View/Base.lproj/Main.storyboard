@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,30 +13,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_2_1_View" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q96-af-nzX">
-                                <rect key="frame" x="20" y="64" width="335" height="343"/>
+                                <rect key="frame" x="16" y="16" width="288" height="216"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="343" id="ZXS-sX-W7a"/>
+                                    <constraint firstAttribute="width" constant="343" id="tmW-R9-scE"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-J2-1Op">
-                                <rect key="frame" x="20" y="415" width="335" height="343"/>
+                                <rect key="frame" x="16" y="248" width="288" height="216"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q96-af-nzX" secondAttribute="trailing" constant="20" id="0zR-Bu-PZe"/>
-                            <constraint firstItem="RIc-J2-1Op" firstAttribute="top" secondItem="q96-af-nzX" secondAttribute="bottom" constant="8" symbolic="YES" id="CSX-eC-qTQ"/>
-                            <constraint firstItem="q96-af-nzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MDR-yq-eCi"/>
-                            <constraint firstItem="q96-af-nzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WSu-AT-UMw"/>
-                            <constraint firstItem="RIc-J2-1Op" firstAttribute="height" secondItem="q96-af-nzX" secondAttribute="height" id="mtC-oU-WvY"/>
-                            <constraint firstItem="RIc-J2-1Op" firstAttribute="width" secondItem="q96-af-nzX" secondAttribute="width" id="pxg-6j-IC8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RIc-J2-1Op" secondAttribute="bottom" constant="20" id="rgf-eO-5dr"/>
-                            <constraint firstItem="RIc-J2-1Op" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ujS-Oi-ydh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RIc-J2-1Op" secondAttribute="trailing" constant="20" id="zzS-ni-dPj"/>
+                            <constraint firstItem="q96-af-nzX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1YH-lU-6qY"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="top" secondItem="q96-af-nzX" secondAttribute="bottom" constant="16" id="6p3-9L-qu5"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="El0-52-j7u"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TY1-T3-FqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RIc-J2-1Op" secondAttribute="trailing" constant="16" id="fIr-zy-aCF"/>
+                            <constraint firstItem="q96-af-nzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hWt-QK-EOJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q96-af-nzX" secondAttribute="trailing" constant="16" id="ltX-HY-fQf"/>
+                            <constraint firstItem="RIc-J2-1Op" firstAttribute="height" secondItem="q96-af-nzX" secondAttribute="height" id="nMO-md-YSv"/>
+                            <constraint firstItem="q96-af-nzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tlc-R4-JY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RIc-J2-1Op" secondAttribute="bottom" constant="16" id="u0U-Sh-nfr"/>
                         </constraints>
                     </view>
                 </viewController>
